@@ -1,0 +1,7 @@
+{
+    "a1":{
+        "service_host_url":"http://flaskasseta1fixapp.eba-3qi2nkjw.ap-southeast-1.elasticbeanstalk.com/",
+        "local_url":"http://127.0.0.1:5002/",
+        "fixing_api":"populateA1Asset"
+    }
+}

@@ -1,11 +1,17 @@
 import optparse
 
+from helloworld.Constants import Constants
+
 
 def flaskrun(app, default_host="0.0.0.0", default_port="80"):
     """
     Takes a flask.Flask instance and runs it. Parses
     command-line flags to configure the app.
     """
+
+    if Constants.is_running_locally:
+        default_host="127.0.0.1"
+        default_port="5001"
 
     # Set up the command-line options
     parser = optparse.OptionParser()
